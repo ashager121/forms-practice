@@ -5,17 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
     <form>
-        <input type="text" name="firstname">
-        <input type="text" name="lastname">
-        <input type="email" name="email">
-        <input type="text" name="birthday">
-        <input type="text" name="reply">
-        <select name="select" form="select-location">Select Location</select>
-        <input type="submit" value="phone">
+        <div class="field">
+            <input placeholder="First Name" type="text" name="firstname">
+        </div>
+
+        <div class="field">
+            <input placeholder="Last Name" type="text" name="lastname">
+        </div>
+
+        <div class="field">
+            <input placeholder="you@email.com" type="email" name="email">
+        </div>
+
+        <div class="field">
+            <input placeholder="mm-dd-yy" type="text" name="birthday">
+        </div>
+
+        <div class="field">
+            <input placeholder="888-333-4444" type="text" name="reply">
+        </div>
+
+        <div class="field">
+            <select name="select" form="location">
+                <option>Select</option>
+            </select>
+        </div>
+        
+        <div class="submit">
+            <button placeholder="Submit" type="submit" type="button">Submit</button>
+        </div>
     </form>
 </body>
 </html>
