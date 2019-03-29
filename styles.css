@@ -2,12 +2,13 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 3px;
     margin: 60px auto;
     background: rgba(230, 41, 41, 0.878);
 }
 form .field {
-    width: 30%;
+    /* width: 30%; */
     padding: 10px;
 } 
 /* form .field input, form .field select {
@@ -36,6 +37,7 @@ form button {
 i {
     background-color: lightgray;
     padding: 8px;
+    width: 24px;
 }
 
 @media (min-width:720px) {
@@ -47,6 +49,7 @@ i {
         margin-bottom: 3px;
         width: 750px;
         margin: 60px auto;
+        padding: 45px;
         background: rgba(230, 41, 41, 0.878);
     }
     form .field {
@@ -54,10 +57,15 @@ i {
         padding: 10px;
     }
     form .field input, form .field select {
-        width: 70%;
+        width: 100%;
+    }
+    form .input-wrapper {
+        display: flex;
     }
     form input {
         padding: 10px;
+        border: none;
+        height: 14px;
     }
     form input::placeholder {
         font-weight: bold;
@@ -72,7 +80,7 @@ i {
         text-transform: uppercase;
     }
     select {
-        height: 37px;
+        height: 36px;
     }
     .submit-wrapper .submit-button{
         display: flex;
