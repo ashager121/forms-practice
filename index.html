@@ -6,37 +6,51 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <form>
         <div class="field">
-            <input placeholder="First Name" type="text" name="firstname">
+            <div class="input-wrapper">
+                    <i class="fas fa-user-edit"></i><input placeholder="First Name" type="text" name="firstname">
+            </div>
         </div>
 
         <div class="field">
-            <input placeholder="Last Name" type="text" name="lastname">
+            <div class="input-wrapper">
+                    <i class="fas fa-user-edit"></i><input placeholder="Last Name" type="text" name="lastname">
+            </div>
         </div>
 
         <div class="field">
-            <input placeholder="you@email.com" type="email" name="email">
+            <div class="input-wrapper">
+                    <i class="fas fa-at"></i><input placeholder="you@email.com" type="email" name="email">
+            </div>
         </div>
 
         <div class="field">
-            <input placeholder="mm-dd-yy" type="text" name="birthday">
+            <div class="input-wrapper">
+                    <i class="fas fa-birthday-cake"></i><input placeholder="mm-dd-yy" type="text" name="birthday">
+            </div>
         </div>
 
         <div class="field">
-            <input placeholder="888-333-4444" type="text" name="reply">
+            <div class="input-wrapper">
+                    <i class="fas fa-birthday-cake"></i><input placeholder="888-333-4444" type="text" name="reply">
+            </div>
         </div>
 
         <div class="field">
-            <select name="select" form="location">
-                <option>Select</option>
-            </select>
+                <div class="input-wrapper">
+                        <i class="fas fa-car"></i><select name="select" form="location">
+                        <option>Select</option>
+                    </select>
+                </div>
         </div>
-        
-        <div class="submit">
-            <button placeholder="Submit" type="submit" type="button">Submit</button>
+        <div class="submit-wrapper">
+            <div class="submit-button">
+                <button type="submit" type="button">Submit Location</button>
+            </div>
         </div>
     </form>
 </body>
